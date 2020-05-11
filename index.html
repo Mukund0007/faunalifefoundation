@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 body, html {
   height: 100%;
@@ -7,7 +8,7 @@ body, html {
 }
 
 .bgimg {
-  background-color:black;
+  background-image: url('background_image.jpg');
   height: 100%;
   background-position: center;
   background-size: cover;
@@ -20,13 +21,14 @@ body, html {
 .topleft {
   position: absolute;
   top: 0;
-  left: 16px;
+  left: 30%;
+  color: #4DD759;
 }
 
 .bottomleft {
   position: absolute;
   bottom: 0;
-  left: 16px;
+  left: 40%;
 }
 
 .middle {
@@ -35,32 +37,66 @@ body, html {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+  background: #10AC84;
+  opacity: 0.8;
+  border-radius: 25px;
 }
 
 hr {
   margin: auto;
   width: 40%;
 }
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 35px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
 </style>
 <body>
 
 <div class="bgimg">
   <div class="topleft">
-    <p>Logo</p>
+    <h1> Fauna Life Foundation </h1>
   </div>
   <div class="middle">
-    <h1>COMING SOON</h1>
-    <hr>
-    <p id="demo" style="font-size:30px"></p>
+    <h2>COMING SOON</h2>
+	<h3> We are currently working on something awesome. Stay tuned!</h3>
+	<h5>TIME LEFT UNTIL LAUNCHING </h5>
+    <p id="demo" style="font-size:30px"></p> 
   </div>
+
   <div class="bottomleft">
-    <p>Some text</p>
+    <p>
+	<a href="https://www.facebook.com/paws.india/" class="fa fa-facebook"></a>
+    <a href="https://twitter.com/animalranchi" class="fa fa-twitter"></a>
+	<a href="https://www.instagram.com/fauna.foundation/?hl=en" class="fa fa-instagram"></a>
+	</p>
   </div>
 </div>
 
 <script>
 // Set the date we're counting down to
-var countDownDate = new Date("June 15, 2020 00:00:00").getTime();
+var countDownDate = new Date("June 30, 2020 00:00:00").getTime();
 
 // Update the count down every 1 second
 var countdownfunction = setInterval(function() {
