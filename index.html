@@ -22,7 +22,7 @@ body, html {
   position: absolute;
   top: 0;
   left: 28%;
-  color: #4DD759;
+  color: #66cc00;
 }
 
 .bottomleft {
@@ -81,49 +81,18 @@ hr {
   <div class="middle">
     <h2>COMING SOON</h2>
 	<h3> We are currently working on something awesome. Stay tuned!</h3>
-	<h5>TIME LEFT UNTIL LAUNCHING </h5>
-    <p id="demo" style="font-size:30px"></p> 
+	<h4>Contact us at  </h4>
+	<h5 style="color:powderblue">faunalifefoundation@gmail.com </h5>
+    <!-- <p id="demo" style="font-size:30px"></p> -->
   </div>
 
   <div class="bottomleft">
     <p>
-	<a href="https://www.facebook.com/pawsafe.india.7" class="fa fa-facebook"></a>
-    <a href="https://twitter.com/animalranchi" class="fa fa-twitter"></a>
+	<a href="https://www.facebook.com/faunalife/" class="fa fa-facebook"></a>
+    <a href="https://twitter.com/LifeFauna" class="fa fa-twitter"></a>
 	<a href="https://www.instagram.com/faunalifefoundation/" class="fa fa-instagram"></a>
 	</p>
   </div>
 </div>
-
-<script>
-// Set the date we're counting down to
-var countDownDate = new Date("May 30, 2020 00:00:00").getTime();
-
-// Update the count down every 1 second
-var countdownfunction = setInterval(function() {
-
-  // Get todays date and time
-  var now = new Date().getTime();
-  
-  // Find the distance between now an the count down date
-  var distance = countDownDate - now;
-  
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-  
-  // Output the result in an element with id="demo"
-  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
-  
-  // If the count down is over, write some text 
-  if (distance < 0) {
-    clearInterval(countdownfunction);
-    document.getElementById("demo").innerHTML = "EXPIRED";
-  }
-}, 1000);
-</script>
-
 </body>
 </html>
